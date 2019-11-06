@@ -1,0 +1,13 @@
+{
+  "name": "gridsome",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "deploy": "aws --profile rtdev s3 sync --acl public-read dist s3://demo-gridsome"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  }
+}
