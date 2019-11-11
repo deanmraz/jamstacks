@@ -70,7 +70,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.blog.host = 'http://demo-empress.s3-website-us-west-2.amazonaws.com/';
   }
 
   return ENV;

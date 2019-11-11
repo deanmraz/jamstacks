@@ -28,3 +28,7 @@ module "demo-prember" {
   source = "./s3"
   name = "demo-prember"
 }
+module "demo-empress" {
+  source = "./s3"
+  name = "demo-empress"
+}

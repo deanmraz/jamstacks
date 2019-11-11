@@ -12,10 +12,12 @@
   },
   "scripts": {
     "build": "ember build",
+    "prod": "ember build -prod",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "aws --profile rtdev s3 sync --acl public-read dist s3://demo-empress"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
